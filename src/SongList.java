@@ -19,4 +19,14 @@ public class SongList {
     public void removeSong (Song song) {
         songStore.remove(this.song);
     }
+
+//creating a method to find a song over a given number of plays
+
+    public void findSong (int numberPlays){
+        for (int count = 0; count < songStore.size(); count ++){
+            if (songStore.get(count).getPlayCount() == numberPlays){
+                System.out.println("Found the song with " + numberPlays + " : " + songStore.get(count).getName() + " by: " + songStore.get(count).getArtist());
+            }
+        }
+    }
 }

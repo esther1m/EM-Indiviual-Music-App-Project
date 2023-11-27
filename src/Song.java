@@ -3,11 +3,11 @@ public class Song {
 
     String name;
     String artist;
-    String playCount;
+    int playCount;
 
 //creating the constructor for the Song class - taking in name, artist, playCount to create an object of the Song class and also ensuring that I can refer to the variables of that object in future
 
-    public void Song(String name, String artist, String playCount){
+    public Song(String name, String artist, int playCount){
         this.name = name;
         this.artist = artist;
         this.playCount = playCount;
@@ -27,7 +27,7 @@ public class Song {
 
 //making a getter method to return the playCount
 
-    public String getPlayCount (){
+    public int getPlayCount (){
         return this.playCount;
     }
 
