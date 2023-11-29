@@ -7,7 +7,6 @@ public class SongList {
     ArrayList <Song> songStore = new ArrayList <Song>();
 
     public SongList () {
-        //this.song = song;
         
     }
 
