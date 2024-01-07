@@ -78,7 +78,7 @@ public class SongList {
     public Song findSongArtist (String artist){
         boolean check = false;
         for (int count = 0; count < songStore.size(); count ++){
-            if (songStore.get(count).getArtist() == artist){
+            if (songStore.get(count).getArtist().equals(artist)){
                 check = true;
                 System.out.println("Found a song by " + artist + " called " + songStore.get(count).getName() + " with " + songStore.get(count).getPlayCount() + " plays.");
                 returnValue = songStore.get(count);

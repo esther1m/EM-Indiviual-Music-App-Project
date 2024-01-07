@@ -107,7 +107,7 @@ public static void main(String[] args) throws Exception {
 
                                 if (removeSongArtist!= null) {
                                         songStore.removeSong(removeSongArtist);
-                                        System.out.println("Song " + artist + " removed.");
+                                        System.out.println("Song by " + artist + " " + removeSongArtist.getName() + " removed.");
                                         System.out.println("Do you want to remove another song by this artist? ");
                                         String checkSong = scanner.nextLine();
                                         if (checkSong.equals("Y")) {
@@ -115,7 +115,7 @@ public static void main(String[] args) throws Exception {
 
                                                 if (removeSongArtist2!= null) {
                                                         songStore.removeSong(removeSongArtist2);
-                                                        System.out.println("Song " + artist + " removed.");
+                                                        System.out.println("Song by " + artist + " " + removeSongArtist.getName() + " removed.");
                                                 }
                                         }
                                 }
