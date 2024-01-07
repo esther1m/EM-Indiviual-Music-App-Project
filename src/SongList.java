@@ -32,6 +32,17 @@ public class SongList {
         songStore.remove(song);
     }
 
+<<<<<<< HEAD
+//creating a method to find a song over a given number of plays
+
+    public void findSong (int numberPlays){
+        for (int count = 0; count < songStore.size(); count ++){
+            if (songStore.get(count).getPlayCount() == numberPlays){
+                System.out.println("Found the song with " + numberPlays + " : " + songStore.get(count).getName() + " by: " + songStore.get(count).getArtist());
+            }
+        }
+    }
+=======
 /*creating a method to find a song over a given number of plays
  * it iterates through every item in the array and checks it with the number of plays given by the user
  * prints every song found
@@ -99,4 +110,5 @@ public class SongList {
     }
 
 
+>>>>>>> 551fc5f7967363d1f8a9aef16c1960c01f133e9f
 }
