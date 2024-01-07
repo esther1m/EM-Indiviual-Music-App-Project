@@ -4,10 +4,10 @@ import java.util.Scanner;
 //importing to use ArrayList and user input functionalities
 
 /*initialising variables so they can be used later throughout the program regardless of methods
- * creating a scanner to have the user input functionalities
- * returnValue helps to get the right return value when looking for a song, handling null and a song being found
- * logic
- */
+* creating a scanner to have the user input functionalities
+* returnValue helps to get the right return value when looking for a song, handling null and a song being found
+* logic
+*/
 public class SongList {
     Song song;
     ArrayList <Song> songStore = new ArrayList <Song>();
@@ -16,9 +16,7 @@ public class SongList {
     Song returnValue;
 
     public SongList () {
-        
     }
-
 
 //creating a method to add a song to the arraylist
 
@@ -32,22 +30,11 @@ public class SongList {
         songStore.remove(song);
     }
 
-<<<<<<< HEAD
-//creating a method to find a song over a given number of plays
-
-    public void findSong (int numberPlays){
-        for (int count = 0; count < songStore.size(); count ++){
-            if (songStore.get(count).getPlayCount() == numberPlays){
-                System.out.println("Found the song with " + numberPlays + " : " + songStore.get(count).getName() + " by: " + songStore.get(count).getArtist());
-            }
-        }
-    }
-=======
 /*creating a method to find a song over a given number of plays
- * it iterates through every item in the array and checks it with the number of plays given by the user
- * prints every song found
- * also adds them to an array to make sure all the songs are output that are over the variable given
- * that array is then returned
+* it iterates through every item in the array and checks it with the number of plays given by the user
+* prints every song found
+* also adds them to an array to make sure all the songs are output that are over the variable given
+* that array is then returned
 */
 
     public ArrayList findSong (int numberPlays){
@@ -67,13 +54,11 @@ public class SongList {
      */
     public Song findSongName (String name){
         boolean checker = false;
-        
         for (int count = 0; count < songStore.size(); count ++){
             if (songStore.get(count).getName().equals(name)){
                 checker = true;
                 System.out.println("Found a song with " + name + " by " + songStore.get(count).getArtist() + " with " + songStore.get(count).getPlayCount() + " plays.");
                 returnValue = songStore.get(count);
-                
             }
         }
         if (!checker){
@@ -109,6 +94,4 @@ public class SongList {
         }
     }
 
-
->>>>>>> 551fc5f7967363d1f8a9aef16c1960c01f133e9f
 }
