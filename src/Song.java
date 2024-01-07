@@ -34,8 +34,8 @@ public class Song {
 //making a print method for song so that I don't have to have repetitive lines
 
     public void printSong(){
-        System.out.println(this.name);
-        System.out.println(this.artist);
-        System.out.println(this.playCount);
+        System.out.println("Name: " + this.name);
+        System.out.println("Artist: " + this.artist);
+        System.out.println("Play count: " + this.playCount);
     }
 }
